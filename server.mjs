@@ -10,7 +10,7 @@ const project=path.dirname(fileURLToPath(import.meta.url));
 const publicRoot=await realpath(path.join(project,'public'));
 const args=process.argv.slice(2);
 const option=name=>args.find(a=>a.startsWith('--'+name+'='))?.slice(name.length+3);
-const startPort=Number(option('port')??process.env.PORT??4311);
+const startPort=Number(option('port')??process.env.PORT??4312);
 const host=option('host')||'0.0.0.0';
 if(!Number.isInteger(startPort)||startPort<0||startPort>65535){console.error('端口必须是0–65535之间的整数。');process.exit(1);}
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.ico':'image/x-icon','.txt':'text/plain; charset=utf-8','.zip':'application/zip','.woff2':'font/woff2'};

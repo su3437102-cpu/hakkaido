@@ -10,6 +10,6 @@ if errorlevel 1 (
   popd
   exit /b 1
 )
-node server.mjs --open
+node server.mjs --port=4312 --open
 popd
 pause
