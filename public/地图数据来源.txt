@@ -1,0 +1,17 @@
+离线地图数据来源
+
+1. 国土地理院ベクトルタイル提供実験
+来源：https://github.com/gsi-cyberjapan/gsimaps-vector-experiment
+利用条款：https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html
+本页数据经选区、筛选、格式转换与重绘；不是国土地理院制作的官方地图产品。
+数据打包日期：2026-11-15；属于静态快照，不代表实时街道或交通状态。
+
+2. Natural Earth land polygons (public domain)
+来源：https://www.naturalearthdata.com/
+条款：https://www.naturalearthdata.com/about/terms-of-use/
+
+3. Leaflet 1.9.4
+地图交互组件的BSD 2-Clause许可证见Leaflet-LICENSE.txt；HTML中也包含完整许可。
+
+所有地图显示数据已直接嵌入HTML，不读取在线瓦片、不需要API密钥、不依赖预先浏览缓存。
+仅内置本次北海道行程的街道和区域数据；广州至香港前夜段为海陆轮廓与行程点概览。

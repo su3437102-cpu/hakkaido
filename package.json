@@ -1,0 +1,9 @@
+{
+  "name": "hokkaido-lan-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "北海道行程局域网预览，内置离线地图与保存后自动刷新",
+  "scripts": {"start": "node server.mjs --open", "dev": "node server.mjs --open", "test": "node --test tests/server.test.mjs"},
+  "engines": {"node": ">=20"}
+}
